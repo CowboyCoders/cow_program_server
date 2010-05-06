@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<program_table>
+    <program id='1'>
+        <name>NAME OF THE MOVIE</name>
+        <description>DESCRIPTION</description>
+        <download_devices>
+            <device type='torrent'>
+                <property name='torrent'>
+                http://IP.ADDRESS:PORT/PATH-TO-FILE
+                </property>
+            </device>
+            <device type='http'>
+                <property name='address'>
+                IP ADDRESS TO ON DEMAND SERVER
+                </property>
+                <property name='port'>
+                ON DEMAND SERVER PORT
+                </property>
+                <property name='file'>
+                FILENAME OF THE MOVIE
+                </property>
+                <property name='max_simultaneous_downloads'>
+                INTEGER (USUALLY 3)
+                </property>
+            </device>
+            <device type='multicast'>
+                <property name='listen_address'>
+                ?
+                </property>
+                <property name='multicast_port'>
+                PORT TO LISTEN ON
+                </property>
+                <property name='multicast_address'>
+                IP TO MULTICAST SERVER
+                </property>
+                <property name='packet_size'>
+                SIZE OF A MULTICAST PACKET
+                </property>
+                <property name='piece_size'>
+                SIZE OF BITTORRENT PIECE (MUST BE EXACTLY THE SAME AS IN TORRENT FILE)
+                </property>
+            </device>
+        </download_devices>
+    </program>
+</program_table>
